@@ -1,10 +1,9 @@
-# Learn Vert.x
+# TroveApp Asset Trading Application
 
-A simple web application using Vert.x to manage assets and user portfolios. The application is designed to be a starting point for learning Vert.x and its ecosystem.
+A simple web application using Vert.x to manage assets and user portfolios. The application is designed to be a starting point for asset trading and portfolio management.
 
 ## Features
 
-*   User registration and login
 *   Asset creation and management
 *   User portfolio management
 *   Leaderboard of top users by gem count
