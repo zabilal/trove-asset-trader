@@ -35,7 +35,7 @@ A simple web application using Vert.x to manage assets and user portfolios. The 
 
 ## Running Locally
 
-1.  Clone the repository: `git clone https://github.com/zakmitchell/learn-vertx.git`
+1.  Clone the repository: `git clone https://github.com/zabilal/trove-asset-trader.git`
 2.  Install maven: <https://maven.apache.org/download.cgi>
 3.  Run the application: `mvn clean compile exec:java`
 4.  Open a web browser and navigate to: <http://localhost:8080/>
