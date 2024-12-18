@@ -122,7 +122,6 @@ public class Handler {
         } catch (Exception e) {
             ctx.response().setStatusCode(400).end(e.getMessage());
         }
-
     }
 
     private void sellAsset(RoutingContext ctx) {

@@ -13,11 +13,11 @@ public class PortfolioService {
 
     public Portfolio createPortfolio(String userId) {
         Portfolio portfolio = new Portfolio(userId);
-        portfolios.put(userId, portfolio);
+        this.portfolios.put(userId, portfolio);
         return portfolio;
     }
 
     public Portfolio getPortfolio(String userId) {
-        return portfolios.get(userId);
+        return this.portfolios.get(userId);
     }
 }

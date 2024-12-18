@@ -1,18 +1,28 @@
 package com.zak.learn.models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Portfolio model represents a user's portfolio containing assets.
  */
-public class Portfolio {
+public class Portfolio implements Serializable {
     private final String userId;
-    private final List<Asset> assets = new ArrayList<>();
+    private final List<Asset> assets;
 
     public Portfolio(String userId) {
         this.userId = userId;
+        this.assets = new ArrayList<>();
     }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public List<Asset> getAssets() {
+        return assets;
+    }   
 
     public void addAsset(String assetId, String name, int quantity, double price) {
         Asset existingAsset = assets.stream().filter(a -> a.getAssetId().equals(assetId)).findFirst().orElse(null);
